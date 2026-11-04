@@ -1,15 +1,15 @@
 {
-  "entry_price": null,
-  "entry_time": null,
-  "exit_due_at": null,
-  "issue_number": null,
+  "entry_price": 4059.49,
+  "entry_time": 1793828111,
+  "exit_due_at": 1793846111,
+  "issue_number": 5,
   "last_error": null,
-  "last_hour_key": 1793804400,
+  "last_hour_key": 1793826000,
   "pending_expires_at": 1793840400,
   "pending_level": 4059.49,
   "setup_time": 1793804400,
-  "status": "PENDING",
-  "stop_loss": null,
-  "tp1": null,
-  "tp2": null
+  "status": "OPEN",
+  "stop_loss": 4046.835578947368,
+  "tp1": 4072.1444210526315,
+  "tp2": 4084.7988421052632
 }
