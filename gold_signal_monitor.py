@@ -53,7 +53,7 @@ def fmt(x): return f"{x:.2f}"
 
 def create_issue(entry,stop,tp1,tp2):
     title=f"[ORO] ENTRADA {fmt(entry)} | SL {fmt(stop)} | TP1 {fmt(tp1)} | TP2 {fmt(tp2)}"
-    body=f"@{OWNER}\n\nENTRADA: {fmt(entry)}\nSTOP LOSS: {fmt(stop)}\nTAKE PROFIT 1: {fmt(tp1)}\nTAKE PROFIT 2: {fmt(tp2)}"
+    body=f"ENTRADA: {fmt(entry)}\nSTOP LOSS: {fmt(stop)}\nTAKE PROFIT 1: {fmt(tp1)}\nTAKE PROFIT 2: {fmt(tp2)}"
     return gh("/issues","POST",{"title":title,"body":body,"assignees":[OWNER]})["number"]
 
 def close_issue(n,reason,price,entry):
