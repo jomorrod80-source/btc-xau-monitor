@@ -1,0 +1,20 @@
+name: Gold Notification Email Test
+
+on:
+  push:
+    paths:
+      - ".github/workflows/gold-notification-test.yml"
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Crear aviso de prueba como github-actions
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -sS -X POST             -H "Authorization: Bearer $GH_TOKEN"             -H "Accept: application/vnd.github+json"             -H "X-GitHub-Api-Version: 2022-11-28"             https://api.github.com/repos/jomorrod80-source/btc-xau-monitor/issues             -d '{"title":"[ORO] PRUEBA BOT — NO ES UNA SEÑAL REAL","body":"@jomorrod80-source\n\nPrueba del canal real de notificaciones. Esta incidencia ha sido creada por GitHub Actions, igual que una señal real.","assignees":["jomorrod80-source"]}'
