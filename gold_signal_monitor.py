@@ -66,6 +66,10 @@ def clear(s,hour):
               "entry_time":None,"entry_price":None,"stop_loss":None,"tp1":None,"tp2":None,
               "exit_due_at":None,"issue_number":None,"last_hour_key":hour})
 
+def notification_test():
+    issue=gh("/issues","POST",{"title":"[ORO] PRUEBA BOT REAL — NO ES UNA SEÑAL","body":"@jomorrod80-source\\n\\nPrueba real generada por github-actions[bot]. Si recibes este correo, el canal de notificación está operativo.","assignees":[OWNER]})
+    print("TEST_ISSUE",issue["number"])
+
 def main():
     now=int(time.time())
     hour=(now//H)*H
@@ -114,6 +118,9 @@ def main():
     save(s); print("SETUP",fmt(high51))
 
 try:
-    main()
+    if os.environ.get("FORCE_NOTIFICATION_TEST")=="1":
+        notification_test()
+    else:
+        main()
 except Exception as e:
     s=load(); s["last_error"]=str(e); save(s); print("ERROR",e)
