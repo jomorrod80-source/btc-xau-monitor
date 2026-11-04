@@ -28,6 +28,7 @@ jobs:
       - name: Analizar oro
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORCE_NOTIFICATION_TEST: ${{ github.event_name == 'push' && '1' || '0' }}
         run: python3 gold_signal_monitor.py
 
       - name: Guardar estado
