@@ -1,15 +1,15 @@
 {
-  "status": "IDLE",
-  "setup_time": null,
-  "pending_level": null,
-  "pending_expires_at": null,
-  "entry_time": null,
   "entry_price": null,
+  "entry_time": null,
+  "exit_due_at": null,
+  "issue_number": null,
+  "last_error": null,
+  "last_hour_key": 1793804400,
+  "pending_expires_at": 1793840400,
+  "pending_level": 4059.49,
+  "setup_time": 1793804400,
+  "status": "PENDING",
   "stop_loss": null,
   "tp1": null,
-  "tp2": null,
-  "exit_due_at": null,
-  "last_hour_key": null,
-  "issue_number": null,
-  "last_error": null
+  "tp2": null
 }
