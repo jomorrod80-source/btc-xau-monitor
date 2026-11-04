@@ -1,0 +1,15 @@
+{
+  "status": "IDLE",
+  "setup_time": null,
+  "pending_level": null,
+  "pending_expires_at": null,
+  "entry_time": null,
+  "entry_price": null,
+  "stop_loss": null,
+  "tp1": null,
+  "tp2": null,
+  "exit_due_at": null,
+  "last_hour_key": null,
+  "issue_number": null,
+  "last_error": null
+}
