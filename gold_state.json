@@ -1,15 +1,15 @@
 {
-  "entry_price": 3613.86,
-  "entry_time": 1795747564,
-  "exit_due_at": 1795765564,
-  "issue_number": 7,
+  "entry_price": null,
+  "entry_time": null,
+  "exit_due_at": null,
+  "issue_number": null,
   "last_error": "'data'",
-  "last_hour_key": 1795744800,
-  "pending_expires_at": 1795759200,
-  "pending_level": 3613.86,
-  "setup_time": 1795723200,
-  "status": "OPEN",
-  "stop_loss": 3593.702,
-  "tp1": 3634.018,
-  "tp2": 3654.176
+  "last_hour_key": 1795777200,
+  "pending_expires_at": null,
+  "pending_level": null,
+  "setup_time": null,
+  "status": "IDLE",
+  "stop_loss": null,
+  "tp1": null,
+  "tp2": null
 }
